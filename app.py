@@ -88,7 +88,7 @@ with st.sidebar:
         st.session_state.session = None
         st.rerun()
 
-if not st.session:
+if not st.session_state.session:
     st.info("Elige escenario, idioma y nivel en la barra lateral y pulsa Iniciar nueva simulación.")
     c1, c2, c3 = st.columns(3)
     c1.markdown("**Idiomas**\n\nFormula propuestas y preguntas.")
